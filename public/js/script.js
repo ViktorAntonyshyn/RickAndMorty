@@ -1,16 +1,18 @@
-const urlApi = 'https://rickandmortyapi.com/api/character'
+const urlApi = 'https://rickandmortyapi.com/api/character/1'
 
-let textAPI = document.getElementById('text-API');
+let textAPI1 = document.getElementById('text-API1');
+let imageElement = document.getElementById('pic-1');
 
 const config = {
     headers: {
-        Accept: "applicaccion/json",
+        Accept: "application/json",
     },
 }
 
 fetch(urlApi, config)
 .then((respuesta) => respuesta.json())
 .then((data) => {
-    textAPI.innerHTML = data.id
-    console.log(data.id)
+    textAPI1.innerHTML = `${data.name} <br> ${data.gender} <br> ${data.status}`;
+    imageElement.src = data.image;
+    statusElement.innerHTML = data.status;
 })
