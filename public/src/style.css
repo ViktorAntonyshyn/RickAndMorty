@@ -65,17 +65,8 @@ background-color: brown;
     border-radius: 30%;
   }
   /* -----------------ROTATE---------------------- */
-/* WORKS!!!
-  .rotate {
-    transform: rotateY(180deg);
-    transition: transform 0.3s ease;
-} */
 
-.tarjeta {
-    /* Додайте потрібні стилі для відображення карток */
-  }
-  
-  .animation-class {
+  .animation {
     transform: rotateY(180deg);
     transition: transform 0.5s;
   }
