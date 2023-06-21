@@ -70,3 +70,67 @@ background-color: brown;
     transform: rotateY(180deg);
     transition: transform 0.5s;
   }
+
+  /* -----------------@MEDIA---------------------- 
+  @media (max-width: 1280px)
+  @media (max-width: 1024px)
+  @media (max-width: 768px)
+  @media (max-width: 680px)
+*/
+
+@media (min-width: 680px) {
+    .tarjeta{
+        width: 42%;
+        height: 35vh;  
+    }
+    .pic-small{
+        width: 190px;}
+
+    .textAPI{
+    transform: rotateY(180deg);
+    height: 16%;
+    width: 40%;
+    font-size: x-larger;}  
+}
+
+@media (min-width: 768px) {
+    .tarjeta{
+        width: 45%;
+        height: 49vh;  
+    }
+    .pic-small{
+        width: 250px;}
+
+    .textAPI{
+    margin-top: 25px;
+    height: 17%;
+    width: 50%;
+    font-size: x-large;}         
+}
+
+@media (min-width: 1024px) {
+    .tarjeta{
+        width: 45%;
+        height: 58vh;  
+    }
+    .pic-small{
+        width: 330px;}
+
+    .textAPI{
+        height: 20%;
+        width: 50%;
+        font-size: xx-large;}
+}
+@media (min-width: 1280px) {
+    .tarjeta{
+        width: 500px;
+        height: 500px;  
+    }
+    .pic-small{
+        width: 370px;}
+    .textAPI{
+        margin-top: 10px;
+        height: 20%;
+        width: 55%;
+        font-size: xx-large;}
+}
