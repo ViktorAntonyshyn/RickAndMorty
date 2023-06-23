@@ -20,7 +20,7 @@
 
 .footer {
     display: flex;
-    background-color: rgb(243, 245, 246);
+    background-color: rgb(69, 168, 218);
     margin-top: 750px;
     width: 100%;
     height: 50px;
@@ -33,12 +33,11 @@
 .iconify-icon {
     display: flex;
     justify-content:center ;
-    margin-left: 35px;
+    margin-left: 75px;
+    width: 30px;
+    height: 30px;
     }
 
-.instagram-icon {
-    display: flex;
-    margin-bottom: 50px;
-}
+
 
 
