@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/src/reset.css">
     <link rel="stylesheet" href="./public/src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </head>
+
 <body>
-    <article class="conainer-small-cards">
+    <header>
+        <nav>
+            <div class="contenedor-nav">
+                <img class="logo" src="public\pics\logo.png" alt="logo" width="50" height="50">
+                <div class="fuente">
+                    <h1><strong>RICK Y MORTY</strong></h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+          <article class="conainer-small-cards">
        
         <div class="tarjeta" onclick="myFunction()" id="1">
             <img class="pic-small" id="pic1" src=" " alt=" ">
@@ -91,9 +106,25 @@
             <p class="textAPI" id="text-API20"> 2 Aqui estara nuevo <br> text de API</p>
         </div>
     </article>
+    </main>
 
-    
+    <footer>
+    <div class="footer">
+        <div class="text">
+            <p><strong>Created By <br>Viktor and Xiomara <br>© 2023</strong></p>
+        </div>
+        <div class="iconify-icon">
+            <a href=""><iconify-icon icon="fa:twitter-square" style="color: #a11c1c;" width="35"
+                    height="35"></iconify-icon></a>
+            <a href=""><iconify-icon icon="fa:facebook-square" style="color: #a11c1c;" width="35"
+                    height="35"></iconify-icon></a>
+            <a href=""><iconify-icon icon="uil:instagram-alt" style="color: #a11c1c;" width="41"
+                    height="41"></iconify-icon></a>
+        </div>
+    </div>
+    </footer>
     <script src="./public/js/script.js"></script>
     <script src="./public/js/anime.js"></script>
 </body>
+
 </html>
