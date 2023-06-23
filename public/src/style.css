@@ -116,6 +116,7 @@ body {
   .animation {
     transform: rotateY(180deg);
     transition: transform 0.5s;
+    background-color: rgb(171, 105, 233);
   }
 
   /* -----------------@MEDIA---------------------- 
