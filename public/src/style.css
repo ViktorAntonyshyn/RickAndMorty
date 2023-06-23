@@ -1,7 +1,9 @@
+
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: white;
   }
 
 .contenedor-nav {
@@ -57,3 +59,135 @@ body {
     height: 80vh;
 }
 
+.conainer-small-cards{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 30px 5px
+}
+.tarjeta{
+    background-color: blueviolet;
+    width: 42%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.pic-small{
+    width: 150px;
+}
+.textAPI{
+    transform: rotateY(180deg);
+    margin-top: 10px;
+    height: 19%;
+    width: 60%;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    border-radius: 5px;
+    background-color: aquamarine;
+    
+    
+}
+
+.button{
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(235, 79, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+
+}
+/* -------------------POP UP--------------------- */
+.pushup-message {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    z-index: 9999;
+    border-radius: 30%;
+  }
+  /* -----------------ROTATE---------------------- */
+
+  .animation {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+  }
+
+  /* -----------------@MEDIA---------------------- 
+  @media (max-width: 1280px)
+  @media (max-width: 1024px)
+  @media (max-width: 768px)
+  @media (max-width: 680px)
+*/
+
+@media (min-width: 680px) {
+    .tarjeta{
+        width: 42%;
+        height: 35vh;  
+    }
+    .pic-small{
+        width: 190px;}
+
+    .textAPI{
+    transform: rotateY(180deg);
+    height: 16%;
+    width: 40%;
+    font-size: x-larger;}  
+}
+
+@media (min-width: 768px) {
+    .tarjeta{
+        width: 45%;
+        height: 49vh;  
+    }
+    .pic-small{
+        width: 250px;}
+
+    .textAPI{
+    margin-top: 25px;
+    height: 17%;
+    width: 50%;
+    font-size: x-large;}         
+}
+
+@media (min-width: 1024px) {
+    .tarjeta{
+        width: 45%;
+        height: 58vh;  
+    }
+    .pic-small{
+        width: 330px;}
+
+    .textAPI{
+        height: 20%;
+        width: 50%;
+        font-size: xx-large;}
+}
+@media (min-width: 1280px) {
+    .tarjeta{
+        width: 500px;
+        height: 500px;  
+    }
+    .pic-small{
+        width: 370px;}
+    .textAPI{
+        margin-top: 10px;
+        height: 20%;
+        width: 55%;
+        font-size: xx-large;}
+}
