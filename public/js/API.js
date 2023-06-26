@@ -1,6 +1,6 @@
-const urlApi = 'https://rickandmortyapi.com/api/character';
+let urlApi = 'https://rickandmortyapi.com/api/character';
 
-const config = {
+let config = {
     headers: {
         Accept: "application/json",
     },
@@ -9,17 +9,17 @@ const config = {
 fetch(urlApi, config)
   .then((response) => response.json())
   .then((data) => {
-    const characters = data.results;
+    let characters = data.results;
 
-    characters.slice(0, 20).forEach((character, index) => {
-      const characterId = index + 1;
-      const characterName = character.name;
-      const characterImage = character.image;
-      const characterStatus = character.status;
-      const characterGender = character.gender;
+    characters.forEach((character, index) => {
+      let characterId = index + 1;
+      let characterName = character.name;
+      let characterImage = character.image;
+      let characterStatus = character.status;
+      let characterGender = character.gender;
 
-      const characterElement = document.getElementById(`text-API${characterId}`);
-      const imageElement = document.querySelector(`#pic${characterId}`);
+      let characterElement = document.getElementById(`text-API${characterId}`);
+      let imageElement = document.querySelector(`#pic${characterId}`);
 
       characterElement.innerHTML = `${characterName}<br>${characterGender}<br>${characterStatus}`;
       imageElement.src = characterImage;
