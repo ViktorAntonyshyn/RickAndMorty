@@ -1,6 +1,6 @@
 function myFunction() {
-    const tarjeta = event.currentTarget;
-    const audio = new Audio('./public/audio/yes.mp3'); // audio
+    let tarjeta = event.currentTarget;
+    let audio = new Audio('./public/audio/yes.mp3'); // audio
     tarjeta.classList.add('animation'); // add amimation
     audio.play();
   
