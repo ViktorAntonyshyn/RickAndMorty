@@ -22,7 +22,7 @@ function buscar() {
         filteredCharacters.forEach(character => {
           const card = document.createElement('div');
           card.classList.add('tarjeta');
-          card.onclick = myFunction; // Додайте необхідну функцію onclick
+          card.onclick = myFunction; // onclick
           function myFunction() {
             let tarjeta = event.currentTarget;
             let audio = new Audio('./public/audio/yes.mp3'); // audio
