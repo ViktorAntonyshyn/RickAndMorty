@@ -11,7 +11,7 @@ fetch(urlApi, config)
   .then((data) => {
     const characters = data.results;
 
-    characters.slice(0, 20).forEach((character, index) => {
+    characters.slice(0, 40).forEach((character, index) => {
       const characterId = index + 1;
       const characterName = character.name;
       const characterImage = character.image;
