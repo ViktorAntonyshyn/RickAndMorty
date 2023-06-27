@@ -38,6 +38,7 @@ body {
     position: fixed;
     top: 100;
     left: 100;
+    margin-top: -7px;
     height: 9vh;
 }
 
@@ -63,17 +64,22 @@ body {
 }
 
 .filter{
-    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3vh;
+    z-index: 100;
+    margin-top: 75px;
     display: flex;
     width: 100%;
     justify-content: space-evenly ;
 }
 .character-cards{
-    margin-top: 10px;
+    margin-top: 107px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 20px;
+    gap: 13px 20px;
 }
 .tarjeta{
     background-color: blueviolet;
