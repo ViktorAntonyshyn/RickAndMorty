@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <link rel="stylesheet" href="./public/src/reset.css">
+    <link rel="stylesheet" href="./public/src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="contenedor-nav">
+                <img class="logo" src="public\pics\logo.png" alt="logo" width="50" height="50">
+                <div class="fuente">
+                    <h1><strong>RICK Y MORTY</strong></h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main class="main">
+    <div class="filter">
+        <select id="status-filter">
+          <option value="">All</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <select id="species-filter">
+          <option value="">All</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <select id="gender-filter">
+          <option value="">All</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Genderless">Genderless</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <button onclick="buscar()">Buscar</button>
+      </div>
+      
+      <!-- Відображення карток персонажів -->
+      <div class="conainer-small-cards">
+           <div id="character-cards" class="character-cards"></div>
+      </div>
+</main>
+      <footer>
+        <div class="footer">
+            <div class="text">
+                <p>Created By <br>Viktor and Xiomara <br>© 2023</p>
+            </div>
+            <div class="iconify-icon">
+                <a href="https://twitter.com/rickandmorty"><iconify-icon icon="fa:twitter-square" style="color: #a11c1c;" width="35"
+                        height="35"></iconify-icon></a>
+                <a href="https://facebook.com/RickandMorty"><iconify-icon icon="fa:facebook-square" style="color: #a11c1c;" width="35"
+                        height="35"></iconify-icon></a>
+                <a href="https://instagram.com/rickandmorty"><iconify-icon icon="uil:instagram-alt" style="color: #a11c1c;" width="41"
+                        height="41"></iconify-icon></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script2.js"></script>
+  
+</body>
+</html>
